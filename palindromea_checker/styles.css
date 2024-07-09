@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --background-color: #ff6f61;
+  --text-color: #fff;
+  --item-color: #cd5b45;
+  --black: #000;
+  --button-color: #008080;
+  --button-hover-color: #006666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+main {
+  background: var(--item-color);
+  margin: 0 10px;
+  padding: 10px;
+}
+
+#header {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#title {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#checker {
+  padding: 15px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: var(--black);
+  background: var(--text-color);
+}
+
+#checker label {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#checker #input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#input #text-input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 50%;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
+
+#input #check-btn {
+  padding: 10px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
+
+#input #check-btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+#checker #result {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#result .bold {
+  font-weight: 600;
+}
+
+#tip {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+i {
+  color: orange;
+}
+
+@media (max-width: 350px) {
+  #checker {
+    padding: 9px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    color: var(--black);
+    background: var(--text-color);
+  }
+
+  #checker #input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 200px) {
+  main {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    background: var(--item-color);
+    margin: 0 10px;
+    padding: 10px;
+    width: 60%;
+  }
+}
