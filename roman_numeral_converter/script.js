@@ -28,3 +28,8 @@ const validateInput = () => {
   }
 }
 convertBtn.addEventListener("click", validateInput);
+numberInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    validateInput();
+  }
+})
